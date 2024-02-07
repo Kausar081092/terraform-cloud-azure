@@ -85,7 +85,7 @@ resource "azurerm_storage_account" "kaust" {
   resource "azurerm_virtual_network" "spoke_vnet1" {
 
     count = var.resourcegroup == "RG2" ? 1 : 2
-  name = var.virtual_network.name1
+  name = var.virtual_network.spoke_vnet.name1
   #name                = local.vnet #or var.virtual_network.spoke_vnet.name
   #address_space       = var.virtual_network.spoke_vnet.address_space
   address_space = local.vnet_address_space

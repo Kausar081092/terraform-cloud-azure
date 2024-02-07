@@ -18,7 +18,7 @@ locals {
     #vnet_address_space = (var.resourcegroup == "RG2" ? var.virtual_network.spoke_vnet.address_space : var.virtual_network.spoke_vnet.address_space_all)
     vnet_address_space = (var.resourcegroup != "RG2" ? var.virtual_network.spoke_vnet.address_space : var.virtual_network.spoke_vnet.address_space_all)
     name = "kausar"
-    name1 = "torm"
+    name1 = "torm1"
     common_tags = {
        environment = local.environment
        name = local.name

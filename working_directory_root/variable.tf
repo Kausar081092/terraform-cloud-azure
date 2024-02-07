@@ -15,6 +15,7 @@ locals {
     RGname = "kausar2-${var.resourcegroup}"
     environment = "prod"
     vnet = "kausar-vnet"
+    vnet1 ="kausarvnet1"
     #vnet_address_space = (var.resourcegroup == "RG2" ? var.virtual_network.spoke_vnet.address_space : var.virtual_network.spoke_vnet.address_space_all)
     vnet_address_space = (var.resourcegroup != "RG2" ? var.virtual_network.spoke_vnet.address_space : var.virtual_network.spoke_vnet.address_space_all)
     name = "kausar"
